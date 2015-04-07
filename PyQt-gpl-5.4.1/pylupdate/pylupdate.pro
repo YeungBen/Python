@@ -1,0 +1,12 @@
+TARGET = pylupdate5
+TEMPLATE = app
+QT -= gui
+QT += xml
+CONFIG += warn_on release
+CONFIG -= android_install
+target.path = /usr/bin
+INSTALLS += target
+INCLUDEPATH += /home/youngben/Gitproject/Python/PyQt-gpl-5.4.1/pylupdate
+VPATH = /home/youngben/Gitproject/Python/PyQt-gpl-5.4.1/pylupdate
+HEADERS = metatranslator.h translator.h simtexth.h proparser.h
+SOURCES = merge.cpp main.cpp translator.cpp sametexth.cpp metatranslator.cpp proparser.cpp numberh.cpp simtexth.cpp fetchtr.cpp
